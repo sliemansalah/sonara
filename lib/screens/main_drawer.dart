@@ -16,6 +16,10 @@ class MainDrawer extends StatelessWidget {
                 Container(
                   width: 100,
                   height: 100,
+                  margin: EdgeInsets.only(
+                    top:30,
+                    bottom: 10
+                  ),
                   decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: DecorationImage(
@@ -25,10 +29,44 @@ class MainDrawer extends StatelessWidget {
                               )
                               ),
                 ),
+                Text("Solayman Salah",
+                style: TextStyle(
+                  fontSize: 22,
+                  color:Colors.white,
+                ),),
+                Text("slieman2001@hotmail.com",
+                style: TextStyle(
+                  color:Colors.white,
+                ),)
               ],
             ),
           ),
-        )
+        ),
+
+          ListTile(
+            leading:Icon(Icons.person),
+            title: Text('Profile',
+            style: TextStyle(
+              fontSize: 18
+            )),
+            onTap: null,
+          ),
+          ListTile(
+            leading:Icon(Icons.settings),
+            title: Text('Settings',
+            style: TextStyle(
+              fontSize: 18
+            )),
+            onTap: null,
+          ),
+          ListTile(
+            leading:Icon(Icons.arrow_back),
+            title: Text('Logout',
+            style: TextStyle(
+              fontSize: 18
+            )),
+            onTap: null,
+          ),
       ],
     ));
   }
