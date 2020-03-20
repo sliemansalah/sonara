@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import './screens/main_drawer.dart';
+
 void main() => runApp(MyApp());
 
 void _healing(){
@@ -21,9 +23,7 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 )),
           ),
-          drawer: Drawer(
-            child: Text("test"),
-          ),
+          drawer: MainDrawer()
         ));
   }
 }
