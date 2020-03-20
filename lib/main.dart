@@ -20,21 +20,9 @@ class MyApp extends StatelessWidget {
                   fontSize: 26,
                   fontWeight: FontWeight.bold,
                 )),
-            actions: <Widget>[
-              new IconButton(
-                  icon: new Icon(Icons.search),
-                  onPressed: () {
-                    print("pressed");
-                  }),
-              new IconButton(
-                  icon: new Icon(Icons.settings),
-                  onPressed: () {
-                    print("settings");
-                  }),
-              new IconButton(
-                  icon: new Icon(Icons.healing),
-                  onPressed: _healing)
-            ],
+          ),
+          drawer: Drawer(
+            child: Text("test"),
           ),
         ));
   }
