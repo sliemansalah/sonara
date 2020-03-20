@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import './details_screen.dart';
 class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -65,7 +65,10 @@ class MainDrawer extends StatelessWidget {
             style: TextStyle(
               fontSize: 18
             )),
-            onTap: null,
+            onTap: () {
+            Navigator.of(context).pop();
+            Navigator.of(context).pushNamed(DetailsScreen.routeName);
+            } ,
           ),
       ],
     ));
