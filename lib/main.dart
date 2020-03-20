@@ -7,10 +7,20 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         home: Scaffold(
-      appBar: AppBar(
-        title: Text('Sonara App Started'),
-      ),
-    ));
+          appBar: AppBar(
+            centerTitle:true,
+            backgroundColor: Colors.red,
+            title: Text('sonara.net',
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                )),
+            actions: <Widget>[
+              
+            ],    
+          ),
+        ));
   }
 }
