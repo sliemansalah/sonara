@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import './who_are_we.dart';
-import './details_screen.dart';
-import './home_screen.dart';
+import '../main.dart';
 
 final List<Map<String, String>> menus = [
 {"id": "home", "title": "الرئيسية"},
@@ -51,15 +50,14 @@ class MainDrawer extends StatelessWidget {
           title: Text('الرئيسية', style: TextStyle(fontSize: 18)),
           onTap:  () {
              Navigator.push(
-            context, MaterialPageRoute(builder: (context) => HomeScreen()));
+            context, MaterialPageRoute(builder: (context) => HomePage()));
           },
         ),
         // Divider(color: Colors.black),
         ListTile(
           title: Text('أخبار', style: TextStyle(fontSize: 18)),
           onTap: () {
-             Navigator.push(
-            context, MaterialPageRoute(builder: (context) => DetailsScreen()));
+           
           }
          
         ),
