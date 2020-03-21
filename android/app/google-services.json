@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "539394219288",
+    "firebase_url": "https://sonara-f157d.firebaseio.com",
+    "project_id": "sonara-f157d",
+    "storage_bucket": "sonara-f157d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539394219288:android:1fbc5fc7d2de149b90926d",
+        "android_client_info": {
+          "package_name": "sonora.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539394219288-7ujid4hfj24n297vk2th317tk5s8sk35.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8EL3kY5barEB2HRj4XAiENNmAFQdtDRU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539394219288-7ujid4hfj24n297vk2th317tk5s8sk35.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

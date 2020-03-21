@@ -3,18 +3,18 @@ import './screens/main_drawer.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-import './screens/home.dart';
+import './screens/get_json.dart';
+import './screens/get_add_mob.dart';
 
-void main() => runApp(HomePage());
-
-// void _healing() {
-//   print('healing');
-// }
+void main() {
+  runApp(HomePage());
+}
 
 class HomePage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    
     return MaterialApp(
         localizationsDelegates: [
           GlobalMaterialLocalizations.delegate,
@@ -62,7 +62,12 @@ class HomePage extends StatelessWidget {
                   backgroundColor: Colors.blue)
             ],
           ),
-          body: Home()
+          
+          body: 
+          Column(children: <Widget>[
+            GetJson(),
+            GetAddMob()
+          ],)
         ));
   }
 }

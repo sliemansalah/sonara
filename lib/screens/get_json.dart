@@ -4,12 +4,12 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'dart:async';
 
-class Home extends StatefulWidget {
+class GetJson extends StatefulWidget {
   @override
-  _HomeState createState() => _HomeState();
+  _GetJsontate createState() => _GetJsontate();
 }
 
-class _HomeState extends State<Home> {
+class _GetJsontate extends State<GetJson> {
   List data;
 
   Future<String> getData() async {
@@ -22,13 +22,14 @@ class _HomeState extends State<Home> {
     print(data[1]["title"]);
     return "Success!";
   }
-
+  
   void initState() {
     this.getData();
   }
 
   Widget build(BuildContext context) {
     return new ListView.builder(
+        shrinkWrap: true,
         itemCount: data == null ? 0 : data.length,
         itemBuilder: (BuildContext context, int index) {
           return new Card(
