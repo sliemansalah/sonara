@@ -28,8 +28,38 @@ class WhoAreWe extends StatelessWidget {
                   )),
             ),
               drawer: MainDrawer(),
+               bottomNavigationBar: BottomNavigationBar(
+              currentIndex: 0,
+              items: [
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.home),
+                  title: Text('الرئيسية'),
+                  backgroundColor: Colors.blue
+                  ),
+                  BottomNavigationBarItem(
+                  icon: Icon(Icons.near_me),
+                  title: Text('محليات'),
+                  backgroundColor: Colors.blue
+                  ),
+                  BottomNavigationBarItem(
+                  icon: Icon(Icons.no_sim),
+                  title: Text('عالميات'),
+                  backgroundColor: Colors.blue
+                  ),
+                  BottomNavigationBarItem(
+                  icon: Icon(Icons.center_focus_strong),
+                  title: Text('رياضة'),
+                  backgroundColor: Colors.blue
+                  ),
+                  BottomNavigationBarItem(
+                  icon: Icon(Icons.panorama_fish_eye),
+                  title: Text('فوت شوف'),
+                  backgroundColor: Colors.blue
+                  )
+              ],),
                body: Center(child: 
                Text('هذه صفحة من نحن',style: TextStyle(fontSize: 32),)),));     
+   
    }
 }
 
