@@ -30,6 +30,7 @@ class HomeScreen extends StatelessWidget {
                drawer: MainDrawer(),
                 bottomNavigationBar: BottomNavigationBar(
               currentIndex: 0,
+              type: BottomNavigationBarType.fixed,
               items: [
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
@@ -57,7 +58,7 @@ class HomeScreen extends StatelessWidget {
                   backgroundColor: Colors.blue
                   )
               ],),
-              
+
                body: Center(child: 
                Text('هذه الصفحة الرئيسية',style: TextStyle(fontSize: 32),)),));    
    }
