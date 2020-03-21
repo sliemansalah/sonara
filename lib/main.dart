@@ -3,11 +3,12 @@ import './screens/main_drawer.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+
 void main() => runApp(MyApp());
 
-void _healing() {
-  print('healing');
-}
+// void _healing() {
+//   print('healing');
+// }
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
