@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-final menus = const [
-  {"id": "home", "title": "الرئيسية"},
+final List<Map<String, String>> menus = [
+{"id": "home", "title": "الرئيسية"},
   {"id": "news", "title": "أخبار"},
   {"id": "localNews", "title": "محلي"},
   {"id": "internationalNews", "title": "عالمي"},
@@ -43,12 +43,12 @@ class MainDrawer extends StatelessWidget {
               prefixIcon: Icon(Icons.search),
               hintText: "البحث في الموقع",
             )),
-        ListTile(
+           
+            ListTile(
           title: Text('الرئيسية', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
-
-        Divider(color: Colors.black),
+        // Divider(color: Colors.black),
         ListTile(
           title: Text('أخبار', style: TextStyle(fontSize: 18)),
           onTap: null,
@@ -57,34 +57,42 @@ class MainDrawer extends StatelessWidget {
           title: Text('محلي', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('عالمي', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('فلسطين', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('مقالات ومقابلات', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('رياضة', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('رياضة محلية', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('أرسل خبر', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+
         ListTile(
           title: Text('من نحن', style: TextStyle(fontSize: 18)),
           onTap: null,
         ),
+        
         // ListTile(
         //   leading:Icon(Icons.arrow_back),
         //   title: Text('Logout',
