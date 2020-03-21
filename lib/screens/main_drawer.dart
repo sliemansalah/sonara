@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import './who_are_we.dart';
+import './details_screen.dart';
+import './home_screen.dart';
 
 final List<Map<String, String>> menus = [
 {"id": "home", "title": "الرئيسية"},
@@ -46,12 +49,19 @@ class MainDrawer extends StatelessWidget {
            
             ListTile(
           title: Text('الرئيسية', style: TextStyle(fontSize: 18)),
-          onTap: null,
+          onTap:  () {
+             Navigator.push(
+            context, MaterialPageRoute(builder: (context) => HomeScreen()));
+          },
         ),
         // Divider(color: Colors.black),
         ListTile(
           title: Text('أخبار', style: TextStyle(fontSize: 18)),
-          onTap: null,
+          onTap: () {
+             Navigator.push(
+            context, MaterialPageRoute(builder: (context) => DetailsScreen()));
+          }
+         
         ),
         ListTile(
           title: Text('محلي', style: TextStyle(fontSize: 18)),
@@ -90,20 +100,12 @@ class MainDrawer extends StatelessWidget {
 
         ListTile(
           title: Text('من نحن', style: TextStyle(fontSize: 18)),
-          onTap: null,
+          onTap: () {
+             Navigator.push(
+            context, MaterialPageRoute(builder: (context) => WhoAreWe()));
+          }
         ),
         
-        // ListTile(
-        //   leading:Icon(Icons.arrow_back),
-        //   title: Text('Logout',
-        //   style: TextStyle(
-        //     fontSize: 18
-        //   )),
-        //   onTap: () {
-        //   Navigator.of(context).pop();
-        //   Navigator.of(context).pushNamed(DetailsScreen.routeName);
-        //   } ,
-        // ),
       ],
     ));
   }

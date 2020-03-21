@@ -24,6 +24,14 @@ class DetailsScreen extends StatelessWidget {
               children: <Widget>[
                 Text(
                   "Hi Details"
+                ),
+                Center(
+        child: RaisedButton(
+          child: Text('Back'),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
                 )
               ],
             ),
